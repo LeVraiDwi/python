@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ft_package"
+version = "0.0.1"
+license = {text = "MIT License"}
+urls = {Homepage = "https://github.com/eagle/ft_package"}
+
+authors = [
+  { name="tcosse"}, {email="tcosse@student.42.fr" },
+]
+description = "A sample test package"
+readme = "README.md"
+requires-python = ">=3.8"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ft_package"]

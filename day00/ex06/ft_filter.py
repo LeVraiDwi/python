@@ -20,9 +20,9 @@ class Iterator:
 
 
 def ft_filter(function, iter) -> Iterator:
-    """cette fonction filtre la liste iter
-      en appliquant a chaque element la fonction function
-      si function est non definie verifie si l'element est vrai"""
+    """Return an iterator yielding those items of iterable for which \
+function(item)
+is true. If function is None, return the items that are true."""
     if (function):
         return Iterator([item for item in iter if function(item)])
     else:

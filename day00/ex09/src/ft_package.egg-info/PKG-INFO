@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ft_package
+Version: 0.0.1
+Summary: A sample test package
+Author: tcosse
+Author-email: tcosse@student.42.fr
+License: MIT License
+Project-URL: Homepage, https://github.com/eagle/ft_package
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is a simple example package.
+
+Package pour lapiscine ne sert a rien
