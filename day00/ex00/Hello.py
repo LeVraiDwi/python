@@ -1,7 +1,7 @@
 ft_list = ["Hello", "tata!"]
 ft_tuple = ("Hello", "toto!")
 ft_set = {"Hello", "tutu!"}
-ft_dict = {"Hello" : "titi!"}
+ft_dict = {"Hello": "titi!"}
 
 ft_list[ft_list.index("tata!")] = "World!"
 ft_tuple = "Hello", "France!"
