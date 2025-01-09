@@ -4,7 +4,7 @@ lst_arg = sys.argv
 if (len(lst_arg) > 1):
     try:
         assert len(lst_arg) == 2, "AssertionError: \
-        more than one argument is provided"
+more than one argument is provided"
         try:
             arg = int(lst_arg[1])
             if arg % 2 == 0:

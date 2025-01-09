@@ -6,7 +6,7 @@ ft_dict = {"Hello": "titi!"}
 ft_list[ft_list.index("tata!")] = "World!"
 ft_tuple = "Hello", "France!"
 ft_secondSet = {"Paris!", "tutu!"}
-ft_set = ft_set.symmetric_difference(ft_secondSet)
+ft_set = ft_secondSet.symmetric_difference(ft_set)
 ft_dict["Hello"] = "42Paris!"
 
 print(ft_list)

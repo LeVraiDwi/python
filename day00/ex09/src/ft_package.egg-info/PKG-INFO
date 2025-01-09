@@ -1,11 +1,11 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.2
 Name: ft_package
 Version: 0.0.1
 Summary: A sample test package
 Author: tcosse
 Author-email: tcosse@student.42.fr
 License: MIT License
-Project-URL: Homepage, https://github.com/eagle/ft_package
+Project-URL: Homepage, https://github.com/LeVraiDwi/python/tree/main/day00/ex09
 Requires-Python: >=3.8
 Description-Content-Type: text/markdown
 License-File: LICENSE

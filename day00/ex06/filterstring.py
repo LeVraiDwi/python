@@ -3,6 +3,7 @@ import sys
 
 
 def main():
+    print(filter.__doc__)
     lst_arg = sys.argv
     try:
         assert len(lst_arg) == 3, "AssertionError: the arguments are bad"

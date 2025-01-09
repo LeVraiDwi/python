@@ -13,11 +13,11 @@ def format_time(seconds):
 def format_it(itPerSecond):
     """Return the given time in Git Mit or it per seconde"""
     if itPerSecond / 1000000 > 1:
-        return f'{itPerSecond / 1000000:10.4}Git/s'
+        return f'{itPerSecond / 1000000:4.4}Git/s'
     elif itPerSecond / 1000 > 1:
-        return f'{itPerSecond / 1000:10.4}Mit/s'
+        return f'{itPerSecond / 1000:4.4}Mit/s'
     else:
-        return f'{itPerSecond:10.4}it/s'
+        return f'{itPerSecond:6.4}it/s'
 
 
 def ft_tqdm(lst: range):
@@ -40,7 +40,7 @@ def ft_tqdm(lst: range):
     total = len(lst)
 
     lenOfTotal = len(str(total))
-    barsize = shutil.get_terminal_size().columns - (7 + (lenOfTotal * 2) + 40)
+    barsize = shutil.get_terminal_size().columns - (7 + (lenOfTotal * 2) + 27)
     start = time.time()
 
     for i in range(1, len(lst) + 1):
@@ -56,7 +56,7 @@ def ft_tqdm(lst: range):
         speedTimeStr = f"[{formatActualTime}<{formatEta}, {format_it(speed)}]"
         substr = f"{i:{lenOfTotal}}/{total} {speedTimeStr}"
         percentstr = f"{backslash if i > 1 else ''}{percent:3}%"
-        print(f"{percentstr}|[{bar}]| {substr}", end="", flush=True)
+        print(f"{percentstr}|{bar}| {substr}", end="", flush=True)
         if i == len(lst):
             print('\n')
         yield
