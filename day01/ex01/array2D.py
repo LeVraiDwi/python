@@ -2,6 +2,7 @@ import numpy as np
 
 
 def slice_me(family: list, start: int, end: int) -> list:
+    """return a new array reshape"""
     try:
         assert isinstance(start, int), "AssertionError: \
 start have the wrong type"

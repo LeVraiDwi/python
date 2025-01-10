@@ -22,6 +22,14 @@ def main():
     print(slice_me(family, "sd", "dsa"))
     print("test6")
     print(slice_me([[]], 0, 2))
+    print("test7")
+    print(slice_me(2, 0, 2))
+    print("test8")
+    print(slice_me("", 0, 2))
+    print("test9")
+    print(slice_me([], 0, 2))
+    print("test9")
+    print(slice_me(family, 0, ""))
     return
 
 

@@ -55,7 +55,7 @@ def ft_blue(array: np.array) -> np.array:
 
 def ft_grey(array: np.array) -> np.array:
     """turn the image received in a grey scale."""
-    inverted = np.empty((array.shape[0], array.shape[1]), dtype=np.int8)
+    inverted = np.empty((array.shape[0], array.shape[1]), dtype=np.int16)
     print(inverted.shape)
     for i in range(len(inverted)):
         for j in range(len(inverted[0])):

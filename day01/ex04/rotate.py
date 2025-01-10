@@ -12,7 +12,7 @@ def zoom(img: Image) -> Image:
 
 def rotate_array(array: np.array) -> np.array:
     """rotate a the array"""
-    rotated = np.empty((len(array[0]), len(array)), dtype=np.int8)
+    rotated = np.empty((len(array[0]), len(array)), dtype=np.int16)
     for i in range(len(array)):
         for j in range(len(array[0])):
             rotated[j, i] = array[i, j]
@@ -20,6 +20,7 @@ def rotate_array(array: np.array) -> np.array:
 
 
 def rotate():
+    """diplay rotated image"""
     path = "animal.jpeg"
     array = ft_load(path)
     img = Image.fromarray(array)

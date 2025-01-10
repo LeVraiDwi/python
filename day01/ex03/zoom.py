@@ -4,6 +4,7 @@ from PIL import Image
 
 
 def zoom(img: Image) -> Image:
+    """zoom inside the img"""
     crop = img.crop([450, 100, 850, 500])
     img = crop.convert('L')
     return img
